@@ -1,0 +1,678 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+     clear: both;
+}
+
+.alignright {
+     float: right; 
+     padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+     float: left; 
+     padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+/* Center the container */
+#container {
+    width: 100%;
+    margin: auto;
+    vertical-align: center;
+    
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+     font-family: 'Raleway', sans-serif;
+     font-family: 'Roboto Slab', serif;
+     font-family: 'Orbitron', sans-serif;
+
+
+    
+}
+
+header {
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
+     font-size: 45px;
+     margin-bottom: 10px;
+     padding-top: 15px;
+     width: 80%;
+     margin: 0 auto;
+
+}
+
+
+.dropdown-menu {
+    float:right;
+    font-size: 18px;
+    font-weight: 300;
+    background: silver;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+
+#mobileicons{
+    display: none;
+}
+
+.menu a{
+    color: #E8E8E8;
+    padding: 20px;
+    line-height: 35px;
+}
+
+.display {
+    display: block;
+}
+
+/*logo color ea9797*/
+
+.icons {
+    float: right;
+    margin: 0 auto;
+    margin-top: -40px;
+    margin-right: 40px;
+
+}
+
+
+
+.fa-bars{
+    padding-left: 15px;
+    float: right;
+    margin-top: -40px;
+    margin-left: 10px;
+
+}
+
+.fa {
+    color: #A42B52;
+}
+
+.biglogo {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.mobilelogo {
+    display: none;
+    margin: 0 auto;
+}
+
+footer {
+     margin-top: 30px;
+     margin-bottom: 10px;
+     float: right;
+     padding: 10px;
+
+}
+
+
+
+
+.closebutton {
+  color: #E8E8E8;
+  font: 25px;
+  right: 5px;
+  text-decoration: none;
+  top: 5px;
+  float: right;
+}
+
+.leadmedia {
+    border: 2px solid black;
+    background-image: url("../img/chess.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 15px;
+
+}
+
+
+.floatingbox { 
+    padding: 20px;
+    border: 2px solid black;
+    background: #777777;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30%;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+
+}
+
+
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    opacity: 1;
+    color: #E8E8E8;
+    padding-bottom: 15px;
+}
+
+h2 a {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 25px;
+    opacity: 1;
+    padding: 15px;
+    color: #E8E8E8;
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    float: right;
+    color: #ea9797;
+}
+
+
+#itunes {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    background: #A42B52;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 35px;
+    padding: 15px;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 15px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.episode {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    float: left;
+    margin-bottom: 10px;   
+    margin-left: 5px;
+
+}
+
+.my-flipster{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.albumboxes {
+    float: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 15px;
+}
+
+#box1{
+    background-image: url("../img/fake-big.jpg");
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+
+#box2 {
+    background-image: url("../img/bina48-AI-robot.jpg");
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+
+#box3 {
+    background-image: url("../img/Biohack-Implant.jpg"); 
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+#box4 {
+    background-image: url("../img/queen-hologram.jpg"); 
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+#box5 {
+    background-image: url("../img/do-amore-lab-made-diamonds-moissanite-nbc-today-show.jpg");
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+
+p {
+    padding: 2px;
+    border: 2px solid black;
+    background: #777777;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 60%;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    color: #E8E8E8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+#articleshares{
+    margin-right: 10%;
+    margin-top: 15px;
+    float: right;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+
+.articletext {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #E8E8E8;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+
+
+}
+
+.paragraph {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    overflow-y: scroll;
+    height: 250px;
+
+}
+
+#episodedescription {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    float: left;
+    color: black;
+    background: none;
+    text-align: left;
+    line-height: 20px;
+    border: none;
+
+}
+
+iframe {
+    margin: 0 auto;
+    margin-top: 15px;
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 781px) and (max-width: 1600px){
+    .icons {
+        margin-top: -60px;
+    }
+
+    .fa-bars {
+        margin-top: -60px;
+    }
+}
+
+
+
+@media only screen and (min-width: 350px) and (max-width: 780px){
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    h2 a{
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .mobilelogo {
+        display: inline;
+    }
+
+    .biglogo {
+        display: none;
+    }
+
+    #mobileicons{
+    display: block;
+}
+
+
+    .articletext {
+        overflow-y: scroll;
+        height: 100px;
+    }
+
+    .fa-bars {
+        margin-top: -35px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .episode {
+    width: 110px;
+    height: 110px;
+    border: 2px solid black;
+    float: left;
+    margin-bottom: 10px;   
+    margin-left: 5px;
+
+}
+
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
